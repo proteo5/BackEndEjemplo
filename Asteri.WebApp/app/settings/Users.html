@@ -1,0 +1,100 @@
+﻿<h1 class="page-header">Settings > Users</h1>
+<div class="row">
+    <div class="col-sm-2 col-sm-offset-10">
+        <button type="button" class="btn  btn-primary btn-block" ng-click="NewUser_Click()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New User</button>
+    </div>
+</div>
+<div class="row" style="margin-top:1em">
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Names</th>
+                <th>Last Names</th>
+                <th>Email</th>
+                <th>Is Active</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">{{user.title}}</h4>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtUser" class="control-label">User:</label>
+                        <input ng-model="user.user" type="text" class="form-control" id="txtUser" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPassword" class="control-label">Password:</label>
+                        <input ng-model="user.password" type="password" class="form-control" id="txtPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPassword2" class="control-label">Confirm Password:</label>
+                        <input ng-model="user.password2" type="password" class="form-control" id="txtPassword2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtUserNames" class="control-label">Names:</label>
+                        <input ng-model="user.names" type="text" class="form-control" id="txtUserNames" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtUserLastNames" class="control-label">Last Names:</label>
+                        <input ng-model="user.lastNames" type="text" class="form-control" id="txtUserLastNames" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtUserEmail" class="control-label">Email:</label>
+                        <input ng-model="user.email" type="email" class="form-control" id="txtUserEmail" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button ng-click="CreateUser_Click()" type="submit" class="btn btn-primary">Create User</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="userModalEdith" tabindex="-1" role="dialog" aria-labelledby="userModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">{{user.title}}: <strong>{{user.user}}</strong></h4>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtUserNames" class="control-label">Names:</label>
+                        <input ng-model="user.names" type="text" class="form-control" id="txtUserNames" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtUserLastNames" class="control-label">Last Names:</label>
+                        <input ng-model="user.lastNames" type="text" class="form-control" id="txtUserLastNames" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtUserEmail" class="control-label">Email:</label>
+                        <input ng-model="user.email" type="email" class="form-control" id="txtUserEmail" required>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input ng-model="user.IsActive" type="checkbox"> Is Active
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button ng-click="UpdateUser_Click()" type="submit" class="btn btn-primary">Update User</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--<pre>user = {{user | json}}</pre>-->

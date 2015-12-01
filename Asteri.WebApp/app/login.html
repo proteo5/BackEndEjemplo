@@ -1,0 +1,18 @@
+﻿    <div class="login-page">
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input ng-model="user.userName" ng-keypress="userKeyPress($event)" focus-on="focusUser" type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input ng-model="user.pass" ng-keypress="passKeyPress($event)" focus-on="focusPass" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="submit_Click()">Sign in</button>
+            <p class="message"> {{user.message}}</p>
+        </form>
+        <!--<pre>user = {{user | json}}</pre>-->
+        
+    </div> <!-- /container -->

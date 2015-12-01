@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asteri.WebApp", "Asteri.WebApp\Asteri.WebApp.csproj", "{91FD8436-E904-4166-9F08-3B13CDD498C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asteri.Lib", "Asteri.Lib\Asteri.Lib.csproj", "{C51DE751-4D6B-4A54-AE61-9F6AFD99BCD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unittest", "unittest\unittest.csproj", "{7B01AD90-D7AA-4EE8-941D-411D701DCDD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91FD8436-E904-4166-9F08-3B13CDD498C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91FD8436-E904-4166-9F08-3B13CDD498C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91FD8436-E904-4166-9F08-3B13CDD498C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91FD8436-E904-4166-9F08-3B13CDD498C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51DE751-4D6B-4A54-AE61-9F6AFD99BCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51DE751-4D6B-4A54-AE61-9F6AFD99BCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51DE751-4D6B-4A54-AE61-9F6AFD99BCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51DE751-4D6B-4A54-AE61-9F6AFD99BCD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B01AD90-D7AA-4EE8-941D-411D701DCDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B01AD90-D7AA-4EE8-941D-411D701DCDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B01AD90-D7AA-4EE8-941D-411D701DCDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B01AD90-D7AA-4EE8-941D-411D701DCDD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
