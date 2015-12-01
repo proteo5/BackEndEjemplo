@@ -4,6 +4,10 @@
     resolve: {
         IsLogin: function ($http) {
             return $http({ method: 'GET', url: '/users/IsLogin' });
+        },
+        CreateAdmin: function ($http) {
+            //Create admin user if firt time use
+            return $http({ method: 'GET', url: '/users/CreateAdmin' });
         }
     },
     controller: function ($scope, $http,$state, focus) {
@@ -46,7 +50,7 @@
         };
     },
     controllerAs: 'loginCtr',
-    onEnter: function (IsLogin, $state) {
+    onEnter: function (IsLogin, $state, CreateAdmin) {
         //Goto dashboard if has login
         if (IsLogin.data.Result == 0) {
             //$state.go('home.dashboard');
